@@ -1,0 +1,12 @@
+{% extends "myapp/base.html"%}
+
+
+{% block content %}
+{% for user in users %}
+<h2>
+    <a href="#"> {{ user.name }} </a>
+</h2>
+<p class="date"> {{ user.email }}</p>
+{% endfor %}
+{% include "pagination.html" with page=page_obj %}
+{% endblock %}

@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    
+
+    <title>navbar</title>
+
+
+</head>
+
+<body>
+    <header class='full'>
+        <div class="left">
+            <h1 class="logo"><a href="#">Customer <span>detail</span></a></h1>
+           
+            <div class="toggle" id="menu">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="right ">
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+                <li> <a href="#">Menu</a></li>
+                <li> <a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+          
+           
+           
+                <a class="btns " href="#">Sign In</a>
+            </a>
+        </div>
+    </header>
+  
+  
+
+    
+        {% block content %}
+        {% endblock %}
+        <div class="footer">
+            <div class="container flex">
+                <div class="footer-about">
+                    <h2>About</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius amet
+                        ratione maiores, reprehenderit facere voluptatem totam quisquam est
+                        earum nisi exercitationem sunt odio! Necessitatibus fugit, iste
+                        nobis corporis libero earum!
+                    </p>
+                </div>
+    
+      
+    
+                <div class="quick-links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <li>Menu</li>
+                        <li>Order</li>
+                        <li>Services</li>
+                    </ul>
+                </div>
+    
+                <div class="get-in-touch">
+                    <h2>Get in touch</h2>
+                    <ul>
+                        <li>Account</li>
+                        <li>Support Center</li>
+                        <li>Feedback</li>
+                        <li>Suggesion</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2022 FoodLover. All Rights Reserved.</p>
+            </div>
+        </div>
+    </body>
+    
+    
+</html>
+
+
+

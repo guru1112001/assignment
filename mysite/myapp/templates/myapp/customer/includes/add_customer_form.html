@@ -1,0 +1,9 @@
+{% block content %}
+<h2>Add a new comment</h2>
+<form action="{% url 'myapp:add_customer' %}" method="post">
+
+ {{ form.as_p }}
+ {% csrf_token %}
+ <p><input type="submit" value="submit"></p>
+</form>
+{% endblock %}
