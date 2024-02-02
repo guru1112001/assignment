@@ -21,13 +21,14 @@ Follow these steps to run the project locally:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/customer-list.git
+   git clone https://github.com/guru1112001/assignment
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd customer-list
+   cd assignment
+   cd mysite
    ```
 
 3. Create and activate a virtual environment (optional but recommended):
